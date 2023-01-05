@@ -1,0 +1,33 @@
+### Mandar datos
+POST http://localhost:3000/api/lenguas HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID": "7",
+    "NOMBRE": "Nahualt",
+    "TIPO": "Curso",
+    "DESCRIPCION": "Enseñanza",
+    "TOKEN": "EJEMPLOUNO"
+}
+
+### Retorno de todos los datos
+GET  http://localhost:3000/api/lenguas HTTP/1.1
+
+### Busqueda de un solo dato
+GET  http://localhost:3000/api/lenguas/63a10f392014a0adb5e7de73 HTTP/1.1
+
+### Actualizar 
+PUT http://localhost:3000/api/lenguas/63a10f392014a0adb5e7de73 HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID": "78",
+    "NOMBRE": "Nahualt",
+    "TIPO": "Libro",
+    "DESCRIPCION": "Enseñanza",
+    "TOKEN": "EJEMPLOUNO"
+}
+
+
+### Borrar un dato
+DELETE http://localhost:3000/api/lenguas/63a10f392014a0adb5e7de73 HTTP/1.1
